@@ -6,9 +6,6 @@
     </linearGradient>
   </defs>
   <circle cx="50" cy="50" r="45" fill="url(#gradient)" />
-  <path d="M30 35 L70 35 L70 40 L30 40 Z" fill="#FFD700" />
-  <path d="M40 50 L60 50 L60 55 L40 55 Z" fill="#FFD700" />
-  <path d="M30 65 L70 65 L70 70 L30 70 Z" fill="#FFD700" />
-  <path d="M50 25 L55 30 L45 30 Z" fill="#FFD700" />
-  <path d="M50 80 L55 75 L45 75 Z" fill="#FFD700" />
+  <!-- Airplane icon -->
+  <path d="M75 50 L60 42 L60 35 C60 33.34 58.66 32 57 32 C55.34 32 54 33.34 54 35 L54 39 L40 32 L30 35 L44 50 L30 65 L40 68 L54 61 L54 65 C54 66.66 55.34 68 57 68 C58.66 68 60 66.66 60 65 L60 58 L75 50 Z" fill="white" />
 </svg> 
