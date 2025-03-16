@@ -30,7 +30,7 @@ export default function Home() {
             </h1>
             <p className="text-base sm:text-lg max-w-2xl mx-auto text-foreground/70">
               Experience exceptional service, comfort, and reliability with Talay Airlines.
-              We're preparing for takeoff and will be launching our services soon.
+              We&apos;re preparing for takeoff and will be launching our services soon.
             </p>
           </div>
           

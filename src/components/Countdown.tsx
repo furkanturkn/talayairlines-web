@@ -9,6 +9,14 @@ interface TimeDisplayProps {
   label: string;
 }
 
+interface CountdownRendererProps {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+  completed: boolean;
+}
+
 const TimeDisplay: React.FC<TimeDisplayProps> = ({ value, label }) => {
   return (
     <motion.div 
@@ -35,7 +43,7 @@ const CountdownTimer: React.FC = () => {
     setLaunchDate(date);
   }, []);
 
-  const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
+  const renderer = ({ days, hours, minutes, seconds, completed }: CountdownRendererProps) => {
     if (completed) {
       return <span className="text-xl">We are launching now!</span>;
     } else {

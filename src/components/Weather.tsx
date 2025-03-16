@@ -8,7 +8,6 @@ type WeatherType = 'cloudy' | 'rainy';
 
 const Weather: React.FC = () => {
   const [weather, setWeather] = useState<WeatherType>('cloudy');
-  const [nextChangeTime, setNextChangeTime] = useState<number>(0);
   const [autoChange, setAutoChange] = useState<boolean>(true);
   const [showControls, setShowControls] = useState<boolean>(false);
 
@@ -21,10 +20,6 @@ const Weather: React.FC = () => {
         // Change weather in order: cloudy → rainy → cloudy
         const nextWeather = getNextWeatherInOrder(weather);
         setWeather(nextWeather);
-        
-        // Set next change time between 5-15 seconds (faster changes)
-        const changeTime = Math.floor(Math.random() * 10) + 5;
-        setNextChangeTime(changeTime);
       }, 10000); // Change weather every 10 seconds
     }
     
